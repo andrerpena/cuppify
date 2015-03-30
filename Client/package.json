@@ -19,7 +19,8 @@
     "reactify": "^1.1.0",
     "rename-function-calls": "^0.1.1",
     "resolve": "^1.1.6",
-    "through": "^2.3.6"
+    "through": "^2.3.6",
+    "watchify": "^2.6.2"
   },
   "dependencies": {
     "reactui": "0.0.2"

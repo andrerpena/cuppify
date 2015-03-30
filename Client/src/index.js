@@ -1,6 +1,6 @@
-var TopBar = require("./components/top-bar.jsx");
-exports.TopBar = TopBar;
+var Layout = require("./components/layout.jsx");
+exports.Layout = Layout;
 
 // defining Globals
 if(!window.Cuppify) window.Cuppify = new Object();
-window.Cuppify.TopBar = TopBar;
+window.Cuppify.Layout = Layout;

@@ -3,7 +3,7 @@ var Menu = require("./top-bar-menu.jsx");
 
 var TopBar = React.createClass({
     render: function() {
-        return <div>Fuck
+        return <div>
                 <div>
                     <Menu/>
                 </div>
