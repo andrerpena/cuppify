@@ -3,7 +3,7 @@ var React = (window.React);
 
 var Content = React.createClass({displayName: "Content",
     render: function () {
-        return React.createElement("div", null, "Content");
+        return React.createElement("div", null);
     }
 });
 
@@ -14,8 +14,8 @@ var React = (window.React);
 
 var Footer = React.createClass({displayName: "Footer",
     render: function() {
-        return React.createElement("div", {className: "footer"}, 
-            "Footer"
+        return React.createElement("div", {className: "footer"}
+
         );
     }
 });
@@ -24,7 +24,7 @@ module.exports = Footer;
 
 },{}],3:[function(require,module,exports){
 var React = (window.React);
-var MainHeader = require("./top-bar.jsx");
+var MainHeader = require("./main-header.jsx");
 var Content = require("./content.jsx");
 var Footer = require("./footer.jsx");
 
@@ -40,15 +40,17 @@ var Layout = React.createClass({displayName: "Layout",
 
 module.exports = Layout;
 
-},{"./content.jsx":1,"./footer.jsx":2,"./top-bar.jsx":4}],4:[function(require,module,exports){
+},{"./content.jsx":1,"./footer.jsx":2,"./main-header.jsx":4}],4:[function(require,module,exports){
 var React = (window.React);
 
 var MainHeader = React.createClass({displayName: "MainHeader",
     render: function() {
         return React.createElement("header", {className: "main-header"}, 
-            React.createElement("div", {className: "logo"}, 
+            React.createElement("div", {className: "main-header-wrapper"}, 
+            React.createElement("div", {className: "main-header-wrapper-logo"}, 
                 "cuppify"
             )
+                )
         );
     }
 });

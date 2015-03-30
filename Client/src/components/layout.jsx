@@ -1,5 +1,5 @@
 var React = require("react");
-var MainHeader = require("./top-bar.jsx");
+var MainHeader = require("./main-header.jsx");
 var Content = require("./content.jsx");
 var Footer = require("./footer.jsx");
 
