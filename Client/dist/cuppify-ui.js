@@ -3,7 +3,7 @@ var React = (window.React);
 
 var Content = React.createClass({displayName: "Content",
     render: function () {
-        return React.createElement("div", null, "Content 2");
+        return React.createElement("div", null, "Content");
     }
 });
 
@@ -11,48 +11,51 @@ module.exports = Content;
 
 },{}],2:[function(require,module,exports){
 var React = (window.React);
-var TopBar = require("./top-bar.jsx");
+
+var Footer = React.createClass({displayName: "Footer",
+    render: function() {
+        return React.createElement("div", {className: "footer"}, 
+            "Footer"
+        );
+    }
+});
+
+module.exports = Footer;
+
+},{}],3:[function(require,module,exports){
+var React = (window.React);
+var MainHeader = require("./top-bar.jsx");
 var Content = require("./content.jsx");
+var Footer = require("./footer.jsx");
 
 var Layout = React.createClass({displayName: "Layout",
     render: function() {
         return React.createElement("div", {className: "page"}, 
-            React.createElement(TopBar, null), 
-            React.createElement(Content, null)
+            React.createElement(MainHeader, null), 
+            React.createElement(Content, null), 
+            React.createElement(Footer, null)
         );
     }
 });
 
 module.exports = Layout;
 
-},{"./content.jsx":1,"./top-bar.jsx":4}],3:[function(require,module,exports){
+},{"./content.jsx":1,"./footer.jsx":2,"./top-bar.jsx":4}],4:[function(require,module,exports){
 var React = (window.React);
 
-var TopBarMenu = React.createClass({displayName: "TopBarMenu",
+var MainHeader = React.createClass({displayName: "MainHeader",
     render: function() {
-        return React.createElement("div", null, "Top menu");
+        return React.createElement("header", {className: "main-header"}, 
+            React.createElement("div", {className: "logo"}, 
+                "cuppify"
+            )
+        );
     }
 });
 
-module.exports = TopBarMenu;
+module.exports = MainHeader;
 
-},{}],4:[function(require,module,exports){
-var React = (window.React);
-var Menu = require("./top-bar-menu.jsx");
-
-var TopBar = React.createClass({displayName: "TopBar",
-    render: function() {
-        return React.createElement("div", null, 
-                React.createElement("div", null, 
-                    React.createElement(Menu, null)
-                )
-            );
-    }
-});
-
-module.exports = TopBar;
-
-},{"./top-bar-menu.jsx":3}],5:[function(require,module,exports){
+},{}],5:[function(require,module,exports){
 var Layout = require("./components/layout.jsx");
 exports.Layout = Layout;
 
@@ -60,4 +63,4 @@ exports.Layout = Layout;
 if(!window.Cuppify) window.Cuppify = new Object();
 window.Cuppify.Layout = Layout;
 
-},{"./components/layout.jsx":2}]},{},[5]);
+},{"./components/layout.jsx":3}]},{},[5]);

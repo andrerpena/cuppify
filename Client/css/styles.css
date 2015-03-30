@@ -1,0 +1,14 @@
+body {
+    background-color: #252527;
+}
+
+.main-header {
+    background: linear-gradient(#111, #222);
+}
+
+.main-header .logo
+{
+    font-family: minecraftiaregular;
+    color: white;
+    font-size: 1.2em;
+}

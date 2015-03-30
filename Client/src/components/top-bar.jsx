@@ -1,14 +1,13 @@
 var React = require("react");
-var Menu = require("./top-bar-menu.jsx");
 
-var TopBar = React.createClass({
+var MainHeader = React.createClass({
     render: function() {
-        return <div>
-                <div>
-                    <Menu/>
-                </div>
-            </div>;
+        return <header className="main-header">
+            <div className="logo">
+                cuppify
+            </div>
+        </header>;
     }
 });
 
-module.exports = TopBar;
+module.exports = MainHeader;
