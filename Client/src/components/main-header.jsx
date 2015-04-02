@@ -5,7 +5,7 @@ var MainHeader = React.createClass({
         return <header className="main-header">
             <div className="main-header-wrapper">
             <div className="main-header-wrapper-logo">
-                cuppify
+                cuppify - this is a modified version
             </div>
                 </div>
         </header>;
